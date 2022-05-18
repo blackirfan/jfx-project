@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="399.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <children>
+      <Label layoutX="65.0" layoutY="72.0" prefHeight="49.0" prefWidth="466.0" style="-fx-background-color: #4BFF00;" text="Result Is Succesfully Updated 👍">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="resultE" layoutX="181.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleTeacher" prefHeight="80.0" prefWidth="237.0" style="-fx-background-color: #3F00FF;" text="Add Another " textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

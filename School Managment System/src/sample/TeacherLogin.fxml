@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: #58d68d;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TeacherContoller">
+
+    <children>
+        <FontAwesomeIconView glyphName="PENCIL" layoutX="224.0" layoutY="206.0" size="70" />
+        <Text layoutX="178.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Login" underline="true">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <TextField fx:id="useername" layoutX="176.0" layoutY="285.0" prefHeight="40.0" prefWidth="159.0" promptText="Username">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="password" layoutX="176.0" layoutY="340.0" prefHeight="40.0" prefWidth="159.0" promptText="Password">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </PasswordField>
+        <Button fx:id="loginTeacher" layoutX="217.0" layoutY="433.0" mnemonicParsing="false" onAction="#loginbutton" prefHeight="32.0" prefWidth="67.0" style="-fx-background-color: #3498db;" text="Login">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <ImageView fitHeight="40.0" fitWidth="46.0" layoutX="114.0" layoutY="285.0">
+         <image>
+            <Image url="@images/icons%20user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="114.0" layoutY="337.0">
+         <image>
+            <Image url="@images/icons%20password.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="wronglogin" layoutX="144.0" layoutY="504.0" prefHeight="59.0" prefWidth="280.0" textAlignment="CENTER" textFill="#fb0000">
+         <font>
+            <Font name="Impact" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="emptyinfo" layoutX="88.0" layoutY="88.0" prefHeight="46.0" prefWidth="369.0" textFill="#2b00ff">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

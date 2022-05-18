@@ -1,0 +1,39 @@
+    @FXML
+    void login(ActionEvent event) {
+
+       String uname = userS.getText();
+        String pass = passS.getText();
+
+        if(uname.equals("") && pass.equals("")){
+
+            JOptionPane.showMessageDialog(null,"Please Enter User name & Password");
+        }
+
+        else {
+            try{
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/aoop_project","root","");
+        pst = con.prepareStatement("select * from student where username =? and password = ?");
+        pst.setString(1,uname);
+                pst.setString(1,pass);
+
+                rs = pst.executeQuery();
+
+               if(rs.next())
+                {
+                    JOptionPane.showMessageDialog(null,"Login Succesful");
+                }
+               else{
+                   JOptionPane.showMessageDialog(null,"Username or Password dont match ");
+              userS.setText("");
+                   passS.setText("");
+                   userS.requestFocus();
+               }
+            }
+
+          catch (ClassNotFoundException ex){
+                ex.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }

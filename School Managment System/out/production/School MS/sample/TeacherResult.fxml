@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="489.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <children>
+      <Label layoutX="157.0" layoutY="33.0" prefHeight="36.0" prefWidth="335.0" style="-fx-background-color: #17a589;" text="                Results Upload" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="89.0" prefHeight="63.0" prefWidth="232.0" style="-fx-background-color: #ff6f00;" text="   Student Roll no ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="103.0" prefHeight="36.0" prefWidth="23.0" text="=" />
+      <Label layoutX="65.0" layoutY="191.0" prefHeight="36.0" prefWidth="153.0" text="1. Bangla   :    " textFill="#17a589">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="238.0" prefHeight="36.0" prefWidth="153.0" text="2. English  :   " textFill="#17a589">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="276.0" prefHeight="36.0" prefWidth="153.0" text="3. Math     :     " textFill="#17a589">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="308.0" prefHeight="36.0" prefWidth="153.0" text="4. Science :     " textFill="#17a589">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="344.0" prefHeight="36.0" prefWidth="153.0" text="5. ICT        :      " textFill="#17a589">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="175.0" layoutY="196.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField layoutX="332.0" layoutY="103.0" prefHeight="36.0" prefWidth="153.0" />
+      <TextField layoutX="175.0" layoutY="243.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField layoutX="175.0" layoutY="349.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField layoutX="175.0" layoutY="318.0" prefHeight="25.0" prefWidth="104.0" />
+      <TextField layoutX="175.0" layoutY="281.0" prefHeight="25.0" prefWidth="104.0" />
+      <Button fx:id="ups" layoutX="364.0" layoutY="251.0" mnemonicParsing="false" onAction="#handleTeacher" prefHeight="121.0" prefWidth="209.0" style="-fx-background-color: #FFFB00;" text="Upload">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

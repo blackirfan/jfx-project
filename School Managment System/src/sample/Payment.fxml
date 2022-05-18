@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="431.0" prefWidth="638.0" style="-fx-background-image: visa;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <children>
+      <ImageView fitHeight="143.0" fitWidth="150.0" layoutX="21.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/visa.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="215.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/MasterCard.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="383.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="440.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/amex.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="69.0" layoutY="174.0" mnemonicParsing="false" style="-fx-background-color: #581845;" text="Select" textFill="WHITE" />
+      <Button layoutX="491.0" layoutY="174.0" mnemonicParsing="false" style="-fx-background-color: #581845;" text="Select" textFill="WHITE" />
+      <Button layoutX="291.0" layoutY="174.0" mnemonicParsing="false" style="-fx-background-color: #581845;" text="Select" textFill="WHITE" />
+      <ImageView fitHeight="129.0" fitWidth="173.0" layoutX="28.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bkash.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="69.0" layoutY="373.0" mnemonicParsing="false" style="-fx-background-color: #581845;" text="Select" textFill="WHITE" />
+      <ImageView fitHeight="129.0" fitWidth="181.0" layoutX="225.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Nagad.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="292.0" layoutY="373.0" mnemonicParsing="false" style="-fx-background-color: #581845;" text="Select" textFill="WHITE" />
+      <ImageView fitHeight="143.0" fitWidth="143.0" layoutX="443.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Rocket.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="491.0" layoutY="373.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="48.0" style="-fx-background-color: #581845;" text="Select" textFill="WHITE" />
+   </children>
+</AnchorPane>
